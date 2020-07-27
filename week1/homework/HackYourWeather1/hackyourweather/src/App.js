@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import CityList from './Weather'
+import Cities from './Weather'
 function App() {
   return (
     <div className="App">
-      <CityList/>
+      <Cities/>
     </div>
   );
 }
 
 export default App;
+

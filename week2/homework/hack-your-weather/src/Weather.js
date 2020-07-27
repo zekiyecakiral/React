@@ -11,12 +11,10 @@ export default function Weather() {
   const [hasError, setHasError] = useState(false);
 
   const getWeather = (cityName) => {
-    console.log(process.env.REACT_APP_OPENWEATHERMAP_API_KEY);
     const END_POINT = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
     fetch(END_POINT)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         const {
           name,
           sys: { country },
@@ -75,7 +73,6 @@ export default function Weather() {
 }
 
 function CityWeather({ data }) {
-  console.log(data);
   return (
     <div className="cityCard">
       <h2>

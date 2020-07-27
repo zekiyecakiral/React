@@ -27,10 +27,6 @@ function Friend() {
       });
   };
 
-//   useEffect(() => {
-//     getFriend();
-//   }, []);
-
   return (
     <div>
       <Button func={getFriend} context ='Get new Friend' />
@@ -47,7 +43,7 @@ function FriendProfile({ friend }) {
         <p>
           {friend.title} {friend.first} {friend.last}
         </p>
-        <img src={friend.medium} />
+        <img src={friend.medium} alt="friend" />
       </div>
     </div>
   );

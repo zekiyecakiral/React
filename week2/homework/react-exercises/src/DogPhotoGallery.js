@@ -41,7 +41,7 @@ function DogPhoto({ photos }) {
   return (
     <div>
       {photos.map((photo, i) => {
-        return <img src={photo} alt="doggs" width="100" height="100" />;
+        return <img src={photo} alt="dog" width="100" height="100" />;
       })}
     </div>
   );
